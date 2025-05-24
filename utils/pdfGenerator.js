@@ -5,7 +5,7 @@ const generatePDF = (data, filename) => {
     const doc = new PDFDocument();
     doc.pipe(fs.createWriteStream(filename));
     
-    // Add PDF content
+   
     doc.fontSize(25).text('Land Record Details', { align: 'center' });
     doc.moveDown();
     
